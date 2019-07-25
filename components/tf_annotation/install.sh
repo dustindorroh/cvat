@@ -14,7 +14,8 @@ mv rcnn/frozen_inference_graph.pb rcnn/inference_graph.pb
 
 if [[ "$CUDA_SUPPORT" = "yes" ]]
 then
-    pip3 install --no-cache-dir tensorflow-gpu==1.7.0
+    pip3 install --no-cache-dir tensorflow-gpu==1.13.1
+
 else
-    pip3 install --no-cache-dir tensorflow==1.7.0
+    pip3 install --no-cache-dir tensorflow-gpu==1.13.1
 fi

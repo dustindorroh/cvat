@@ -65,7 +65,8 @@ RUN if [ "$OPENVINO_TOOLKIT" = "yes" ]; then \
 ARG CUDA_SUPPORT
 ENV CUDA_SUPPORT=${CUDA_SUPPORT}
 RUN if [ "$CUDA_SUPPORT" = "yes" ]; then \
-        /tmp/components/cuda/install.sh; \
+#        /tmp/components/cuda/install.sh; \
+        /tmp/components/cuda/install-cuda10-0.sh; \
     fi
 
 # Tensorflow annotation support
